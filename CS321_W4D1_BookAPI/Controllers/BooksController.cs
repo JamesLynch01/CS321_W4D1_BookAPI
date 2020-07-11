@@ -37,7 +37,7 @@ namespace CS321_W4D1_BookAPI.Controllers
                 .Get(id)
                 .ToApiModel();
             if (book == null) return NotFound();
-            return Ok(book.ToApiModel());
+            return Ok(book);
         }
 
         // create a new book
